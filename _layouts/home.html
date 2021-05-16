@@ -25,41 +25,13 @@ layout: default
 
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
+      <p class="col-lg-8 col-md-10 mx-auto">
 
-        {{ content }}
-
-        <!-- Home Post List -->
-        {% for post in site.posts limit : 5 %}
-
-        <article class="post-preview">
-          <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-            <h2 class="post-title">{{ post.title }}</h2>
-            {% if post.subtitle %}
-            <h3 class="post-subtitle">{{ post.subtitle }}</h3>
-            {% else %}
-            <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>
-            {% endif %}
-          </a>
-          <p class="post-meta">Posted by
-            {% if post.author %}
-            {{ post.author }}
-            {% else %}
-            {{ site.author }}
-            {% endif %}
-            on
-            {{ post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=post.content %}            
-          </p>
-        </article>
-
-        <hr>
-
-        {% endfor %}
-
-        <!-- Pager -->
-        <div class="clearfix">
-          <a class="btn btn-primary float-right" href="{{"/posts" | relative_url }}">View All Posts &rarr;</a>
-        </div>
+        <p>Foamtec International is a leading manufacturer of Technical Polyurethane Foam and we produce Precision Die Cut Components and are a converter of High Performance Materials. We have manufacturing facilities in Singapore, Malaysia, China and Thailand to support your Asian operations. We offer precision die cut components, material sourcing and precision converting solutions. Foamtec serves the medical, electronics, imaging, telecommunications, hard disk drive and automotive markets.</p>
+        <p>Foamtec International Fabrication Group has been providing businesses on converting facilities with high quality, foam products since 1998, in our various location facilities. What started out as a niche business, providing foam specializes for all industry and has expanded into the demanding industry. With our continuous new expansion allowed us to fine tune our capabilities regarding every aspect of modern foam fabrication. We are now able to service a wide variety of diverse market segments.</p>
+        <p>We provide unique fabrication services, individually tailored to our clients’ divergent requirements and specifications. We are a full service fabricating house, offering sub-assembly solutions from design concept and engineering to project completion.</p>
+        <p>Quality, customer service and prompt turnaround are not just a marketing tag line here at Foamtec. These characteristics are critical components of our corporate philosophy and our day-to-day operations. We pride ourselves on our ability to discern our customer’s needs, provide world-class solutions and support our clients with post-purchase customer service.</p>
+        <p>Contact us today to discuss your upcoming project and receive a prompt quotation from one of our knowledgeable staff members.</p>
 
       </div>
     </div>
